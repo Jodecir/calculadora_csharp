@@ -11,5 +11,15 @@ namespace Calculadora
         {
             System.Console.WriteLine($"Subtração: {x - y}");
         }
+
+        public static void Multiplicar(int x, int y)
+        {
+            System.Console.WriteLine($"Multiplicação: {x * y}");
+        }
+        
+        public static void Dividir(int x, int y)
+        {
+            System.Console.WriteLine($"Divisão: {x / y}");
+        }
     }
 }
