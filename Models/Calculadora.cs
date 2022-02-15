@@ -1,4 +1,4 @@
-namespace Calculadora.Models
+namespace Calculadora
 {
     public class Calculadora
     {

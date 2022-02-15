@@ -1,13 +1,14 @@
 ﻿using System;
-using Calculadora.Models;
 
 namespace Calculadora
 {
-    class Program 
+    internal static class Program
     {
-        static void Main(string[] args)
+        public delegate void Operacao(int x, int y);
+        static void Main()
         {
-
+            Operacao op = new(Calculadora.Somar);
+            op.Invoke(10,10);
         }
     }
 }
