@@ -1,15 +1,15 @@
-namespace calculadora_csharp.Models
+namespace Calculadora.Models
 {
     public class Calculadora
     {
-        public void Somar(int x, int y)
+        public static void Somar(int x, int y)
         {
-            System.Console.WriteLine($"Adição: (x + y)");
+            System.Console.WriteLine($"Adição: {x + y}");
         }
 
-        public void Subtrair(int x, int y)
+        public static void Subtrair(int x, int y)
         {
-            System.Console.WriteLine($"Subtração: (x - y)");
+            System.Console.WriteLine($"Subtração: {x - y}");
         }
     }
 }

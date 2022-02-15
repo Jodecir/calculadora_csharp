@@ -1,9 +1,13 @@
 ﻿using System;
-using calculadora_csharp.Models;
+using Calculadora.Models;
 
 namespace Calculadora
 {
-    class Program {
+    class Program 
+    {
+        static void Main(string[] args)
+        {
 
+        }
     }
 }
