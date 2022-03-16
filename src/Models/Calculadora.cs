@@ -1,6 +1,6 @@
-namespace Calculadora
+namespace Calculadora.src.Models
 {
-    public class Calculadora
+    public class CalculadoraModel
     {
         public static void Somar(int x, int y)
         {

@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculadora.src.Models;
 
 namespace Calculadora
 {
@@ -11,41 +12,39 @@ namespace Calculadora
 
             while (!string.Equals(opcaoUsuario, "X", StringComparison.OrdinalIgnoreCase))
 			{
-            
 				switch (opcaoUsuario)
 				{
 					case "1":
                         RecebeValores();
-						Operacao op = new(Calculadora.Somar);
+						Operacao op = new(CalculadoraModel.Somar);
                         op.Invoke(10,10);
 						break;
 					case "2":
                         RecebeValores();
-                        op = new(Calculadora.Subtrair);
+                        op = new(CalculadoraModel.Subtrair);
                         op.Invoke(10,10);
 						break;
 					case "3":
                         RecebeValores();
-                        op = new(Calculadora.Multiplicar);
+                        op = new(CalculadoraModel.Multiplicar);
                         op.Invoke(10,10);
 						break;
 					case "4":
                         RecebeValores();
-						op = new(Calculadora.Dividir);
+						op = new(CalculadoraModel.Dividir);
                         op.Invoke(10,10);
 						break;
 					case "5":
                         RecebeValores();
-						op = new(Calculadora.Somar);
-                        op += Calculadora.Subtrair;
-                        op += Calculadora.Multiplicar;
-                        op += Calculadora.Dividir;
+						op = new(CalculadoraModel.Somar);
+                        op += CalculadoraModel.Subtrair;
+                        op += CalculadoraModel.Multiplicar;
+                        op += CalculadoraModel.Dividir;
                         op.Invoke(10,10);
 						break;
                     case "C":
 						Console.Clear();
 						break;
-
 					default:
 						throw new ArgumentOutOfRangeException();
 				}
